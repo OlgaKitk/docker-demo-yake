@@ -1,0 +1,5 @@
+webapp: docker-compose exec $NAME $CMD
+manage: $BIN webapp python ./manage.py $CMD
+
+_config:
+	NAME: webapp

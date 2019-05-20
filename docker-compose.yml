@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  frontend:
+    container_name: frontend.docker
+    labels:
+       traefik.frontend.rule: "Host:frontend.test"
+	   
+  backend:
+    container_name: backend.docker
+    labels:
+       traefik.frontend.rule: "Host:backend.test"
