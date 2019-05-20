@@ -5,7 +5,7 @@ services:
     container_name: frontend.docker
     labels:
        traefik.frontend.rule: "Host:frontend.test"
-	   
+
   backend:
     container_name: backend.docker
     labels:
